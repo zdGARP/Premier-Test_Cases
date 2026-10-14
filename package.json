@@ -1,0 +1,11 @@
+{
+    "name": "Premier-Plus-Clinic-Testing",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@playwright/test": "1.64.0",
+        "playwright": "1.64.0"
+    },
+    "dependencies": {
+        "dotenv": "^18.0.7"
+    }
+}
