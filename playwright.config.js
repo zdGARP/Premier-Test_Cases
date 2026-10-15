@@ -1,34 +1,36 @@
-require('dotenv').config({ path: require('path').resolve(__dirname, '.env') });
+﻿require('dotenv').config();
 
 const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
-    testDir: './tests',
-    timeout: 60000,
-    expect: {
-        timeout: 10000
-    },
-    fullyParallel: false,
-    workers: 1,
-    maxFailures: 0,
+  testDir: './tests',
+  fullyParallel: false,
+  workers: 1,
+  retries: 0,
 
-    reporter: [
-        ['list'],
-        ['html', { outputFolder: 'playwright-report', open: 'never' }]
-    ],
+  reporter: [
+    ['list'],
+    ['html', {
+      outputFolder: 'reports/html',
+      open: 'never'
+    }],
+    ['./utils/jsonReporter.js']
+  ],
 
-    use: {
-        baseURL: process.env.BASE_URL,
-        headless: process.env.HEADLESS === 'true',
-        screenshot: 'off',
-        video: 'off',
-        trace: 'off'
-    },
+  outputDir: 'results/test-results',
 
-    projects: [
-        {
-            name: 'chromium',
-            use: { ...devices['Desktop Chrome'] }
-        }
-    ]
+  use: {
+    baseURL: process.env.BASE_URL,
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+    trace: 'retain-on-failure',
+    ...devices['Desktop Chrome']
+  },
+
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] }
+    }
+  ]
 });
