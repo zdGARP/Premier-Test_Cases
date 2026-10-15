@@ -1,34 +1,18 @@
-require('dotenv').config({ path: require('path').resolve(__dirname, '.env') });
-
-const { defineConfig, devices } = require('@playwright/test');
+const { defineConfig } = require('@playwright/test');
+require('dotenv').config();
 
 module.exports = defineConfig({
-    testDir: './tests',
-    timeout: 60000,
-    expect: {
-        timeout: 10000
-    },
-    fullyParallel: false,
-    workers: 1,
-    maxFailures: 0,
-
-    reporter: [
-        ['list'],
-        ['html', { outputFolder: 'playwright-report', open: 'never' }]
-    ],
-
-    use: {
-        baseURL: process.env.BASE_URL,
-        headless: process.env.HEADLESS === 'true',
-        screenshot: 'off',
-        video: 'off',
-        trace: 'off'
-    },
-
-    projects: [
-        {
-            name: 'chromium',
-            use: { ...devices['Desktop Chrome'] }
-        }
-    ]
+  testDir: './tests',
+  timeout: 30000,
+  retries: 0,
+  reporter: [
+    ['html', { open: 'never' }],
+    ['list']
+  ],
+  use: {
+    baseURL: process.env.BASE_URL || 'http://13.204.230.143/',
+    headless: true,
+    screenshot: 'only-on-failure',
+    trace: 'on-first-retry',
+  },
 });
