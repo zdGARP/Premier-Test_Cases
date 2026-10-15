@@ -1,5 +1,9 @@
-node_modules/
-test-results/
-playwright-report/
-screenshots/*.png
+﻿node_modules/
 .env
+auth.json
+results/test-results/
+results/execution-results.json
+reports/html/
+playwright-report/
+test-results/
+screenshots/*.png
