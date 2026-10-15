@@ -1,0 +1,1 @@
+{"dependencies":{"dotenv":"^18.0.7","playwright":"1.64.0","xlsx":"^0.18.5"},"devDependencies":{"@playwright/test":"^1.64.0","@types/node":"^26.6.5"}}

@@ -1,0 +1,377 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/reports-and-users.spec.ts",
+      "--headed"
+    ],
+    "configFile": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\playwright.config.ts",
+    "rootDir": "C:/Users/mukes/OneDrive/Desktop/SUBASH_PROJECT/Premier-Plus-Clinic-Testing/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/mukes/OneDrive/Desktop/SUBASH_PROJECT/Premier-Plus-Clinic-Testing/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/mukes/OneDrive/Desktop/SUBASH_PROJECT/Premier-Plus-Clinic-Testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\tests",
+        "snapshotDir": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://13.204.230.143/",
+          "trace": "on-first-retry",
+          "screenshot": "on",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "headless": false
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "reports-and-users.spec.ts",
+      "file": "reports-and-users.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Reports & User Management Suite (TC-REP-001 to TC-USER-001)",
+          "file": "reports-and-users.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-REP-001: Template Creation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3333,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-13T10:17:31.394Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\test-results\\reports-and-users-Reports--d368f-C-REP-001-Template-Creation-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4de26512f82c8f8728f3-c80e417f6ebfdfe22896",
+              "file": "reports-and-users.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TC-REP-002: Enter Patient Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3339,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-13T10:17:35.644Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\test-results\\reports-and-users-Reports--b8b47--REP-002-Enter-Patient-Test-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4de26512f82c8f8728f3-75add6b8bc5938992ade",
+              "file": "reports-and-users.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "TC-REP-003: Finalize Report",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4036,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-13T10:17:38.997Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\test-results\\reports-and-users-Reports--9dcbb--TC-REP-003-Finalize-Report-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4de26512f82c8f8728f3-f3ffd0f63270786e2545",
+              "file": "reports-and-users.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "TC-REP-004: Edit Locked Report",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4334,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-13T10:17:43.046Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\test-results\\reports-and-users-Reports--f93fd--REP-004-Edit-Locked-Report-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4de26512f82c8f8728f3-082cc23d9a1344228c02",
+              "file": "reports-and-users.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "TC-REP-005: Reference Range Flags",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3759,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-13T10:17:47.393Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\test-results\\reports-and-users-Reports--c2335-P-005-Reference-Range-Flags-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4de26512f82c8f8728f3-cbf9d49763e8b75dbc0e",
+              "file": "reports-and-users.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "TC-USER-001: User List Access (RBAC)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2818,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-13T10:17:51.163Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\mukes\\OneDrive\\Desktop\\SUBASH_PROJECT\\Premier-Plus-Clinic-Testing\\test-results\\reports-and-users-Reports--184cc--001-User-List-Access-RBAC--chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4de26512f82c8f8728f3-a2f702132603aee3fc75",
+              "file": "reports-and-users.spec.ts",
+              "line": 43,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-13T10:17:30.906Z",
+    "duration": 23742.543,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
